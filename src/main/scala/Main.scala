@@ -19,7 +19,7 @@ object Main extends App {
 
   // MongoDB-Verbindungsdaten
   var mongoClient = dbObject.getMongoClient(connectionString)
-  val database = dbObject.getDatabase(mongoClient, "Projektstudium")
+  val database = dbObject.getDatabase(mongoClient, "BBC")
   val collection: MongoCollection[BsonDocument] = database.getCollection("BBC_raw_data")
 
 
